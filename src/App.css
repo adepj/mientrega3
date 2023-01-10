@@ -1,0 +1,143 @@
+:root {
+  --body-principal: rgb(115, 184, 193);
+  --segundo: rgb(102, 97, 146);
+  --tercero: #b2df49;
+  --cuarto: #adadad;
+  --typography: rgba(251, 251, 251, 1);
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  background: var(--body-principal);
+  color: var(--typography);
+}
+
+.header {
+  background: url("./assets/ricky.jpg");
+  position: absolute;
+  width: 1440px;
+  max-width: 1440px;
+  min-width: 100px;
+  height: 372px;
+  left: 0px;
+  top: 0px;
+}
+
+.img-header2 {
+  background: url("./assets/rick_and_morty.svg");
+  position: absolute;
+  width: 454px;
+  height: 176px;
+  left: 493px;
+  top: 200px;
+}
+
+.card-info {
+  background: var(--segundo);
+  position: absolute;
+  width: 890px;
+  height: 126px;
+  top: 404px;
+  left: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+.card-info div {
+  width: 200px;
+  height: 100px;
+  background: var(--typography);
+  border-radius: 5px;
+  text-align: center;
+  color: var(--segundo);
+}
+
+.card-info .div-population {
+  width: 125px;
+}
+
+.card-info .div-id {
+  width: 70px;
+}
+
+.card-info div p {
+  font-size: 18px;
+margin-top: -15px;
+color:rgb(4, 4, 80)
+}
+
+.container-search {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 550px;
+  left: 300px;
+  width: 60%;
+  height: 40px;
+}
+
+input {
+  width: 300px;
+  font-size: 20px;
+  color: var(--segundo);
+  border: solid 1px rgb(217, 218, 217);
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  margin-left: 5px;
+  width:80px;
+  font-size: 20px;
+  color: var(--segundo);
+  border: solid 1px rgb(211, 243, 211);
+  border-radius: 5px;
+}
+
+.container-list-character {
+  padding: 20px 0px;
+  position: absolute;
+  top: 610px;
+  left: 275px;
+  width: 800px;
+  min-height: 550px;
+  background: var(--segundo);
+   border: solid 1px rgb(190, 223, 190);
+  border-radius: 10px;
+}
+
+.container-character {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  width: auto;
+  border-radius: 10px;
+}
+.character {
+  padding: 15px;
+  width: 240px;
+  border: solid 1px rgb(193, 213, 193);
+  border-radius: 10px;
+}
+
+.character img {
+  width: 205px;
+  border-radius: 10px;
+}
